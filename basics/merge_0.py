@@ -1,9 +1,10 @@
-iA=[1,3,5]
+A=[1,3,5]
 B=[2,4]
+#not required
 C=[]
-
+# no need to pass as C empty Array, you can define inside function
 def merge(A,B,C):
-    c = []
+    C = []
     i, j = 0, 0
     M, N = len(A), len(B)
     #while (len(A)>0 and len(B) >0):
@@ -11,12 +12,15 @@ def merge(A,B,C):
         if A[i] < B[j]:
             C.append(A[i])
             i+=1
+            # instead of removing use pointers, removing element from array taking one more extra operation 
+            # which consuming extra time for each element
             #A.remove(A[0])
         else:
             C.append(B[j])
             j+=1
             #B.remove(B[0])
-    
+     
+    #here only one while gets excuted because, jo bhi chota Array hai (A or B) uper k while me khtm ho rha hai.
     while M>i:
         C.append(A[i])
         i+=1
