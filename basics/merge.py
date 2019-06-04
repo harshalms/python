@@ -20,6 +20,8 @@ def merge(A, B):
     return C
 
 if __name__ == "__main__":
-    A=[1,3,5]
-    B=[2,4]
-    print(merge(A, B))
+    A=[[1, 2, 3,5], [1], [1, 6, 7]]
+    B=[[2, 4], [0], []]
+    for i in range(len(A)):
+        print("Input: \nA: %s \nB: %s" %(A[i], B[i]))
+        print("Output : %s\n---------------" % merge(A[i], B[i]))
