@@ -1,3 +1,5 @@
+# Check for balanced parentheses in an expression
+
 S=input()
 
 def bracket(A):
