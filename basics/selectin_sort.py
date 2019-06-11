@@ -10,6 +10,6 @@ def selction_sort(arr):
         
 
 if __name__ == '__main__':
-    arr = [74, 32, 89, 55, 21, 64]
+    arr = [74, 64, 89, 21, 21, 64]
     (selction_sort(arr))
     print(arr)
