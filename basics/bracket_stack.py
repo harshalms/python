@@ -1,7 +1,7 @@
 # Check for balanced parentheses in an expression
 S=input()
 def bracket(A):
-    count1,count2=0,0
+    count1,count2=0, 0
     flag = False
     print(A)
     for i in A:
