@@ -1,5 +1,4 @@
-n = 6
-# n = int(input())
+n = int(input())
 s=''
 while n > 0:
     s+=str(n%2)
@@ -8,7 +7,7 @@ print( s[::-1])
 count = 0
 result = 0
 for i in s:
-    if i == '0':
+    if i == '0':3
         count = 0
     else:
         count+=1
