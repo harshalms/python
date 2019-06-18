@@ -1,15 +1,20 @@
-n = 8
-n = int(input())
-# c=[]
+n = 6
+# n = int(input())
 s=''
 while n > 0:
-    # c.append(n%2)
     s+=str(n%2)
     n = n//2
 print( s[::-1])
-# j = len(c)-1
-# print(j)
-# while j > -1:
-#     print(c[j], end="")
-#     j-=1
-# print()
+count = 0
+result = 0
+for i in s:
+    if i == '0':
+        count = 0
+    else:
+        count+=1
+    result = max(result, count)
+print(result)
+decimal = 0
+for i in range(result):
+    decimal+= (2 **i)
+print(decimal)
