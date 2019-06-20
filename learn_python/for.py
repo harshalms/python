@@ -1,0 +1,10 @@
+G = nx.read_edgelist( 'C:\Users\Harshal M S\Downloads/511145.protein.links.v11.0 (1).txt' , nodetype=str,
+data=(( 'weight' ,float),))
+giant = max(nx.connected_component_subgraphs(G), key=len)
+print(G.degree())
+print(G.order())
+print( 'Number of edges=' , G.size())
+print( 'Density=' , nx.density(G))
+print( 'Characteristic path length=' , nx.average_shortest_path_length(giant))
+print( 'Diameter =' , nx.diameter(giant))
+print( 'Network Clustering Coefficient=' , nx.average_clustering(G))
