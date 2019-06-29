@@ -11,8 +11,9 @@ We can 72 by rotating array twice.
 
 '''
 
-A = [10, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# A = [10, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 # A = [1, 20, 2, 10]
+A = [8, 3, 1, 2]
 def max_array_sum(A):
     max_sum = 0
     for i in range(len(A)):
@@ -26,4 +27,12 @@ def max_array_sum(A):
         max_sum = max(max_sum, result)
         # print(result)
     return max_sum
+# def max_array_sum2(A):
+#     result = 0
+#     A.sort()
+#     for k in range(len(A)):
+#             result+=k*A[k]
+#     return result
+
 print(max_array_sum(A))
+# print(max_array_sum2(A))
