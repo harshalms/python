@@ -8,9 +8,10 @@ Expected time complexity is O(n) and extra space is O(1).
 '''
 # A = [1, 2, 0, 4, 3, 0, 5, 0]
 # A = [1, 2, 0, 0, 0, 3, 6]
-A = [1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0]
+# A = [1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0]
+# A = [0, 1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0, 9]
 def moveZERO(A):
-    count, k = 0, 0
+    k = 0
     for i in range(len(A)):
         if A[i]!=0:
             A[k]=A[i]
@@ -18,4 +19,16 @@ def moveZERO(A):
     for k in range(k, len(A)):
         A[k]=0
     return A
-print(moveZERO(A))
+def moveZEROinOne(A):
+    count = 0
+    for i in range(len(A)):
+        if A[i] != 0:
+            A[count], A[i] = A[i], A[count]
+            count+=1
+    return A
+if __name__ == "__main__":
+    A = [[1, 2, 0, 4, 3, 0, 5, 0], [1, 2, 0, 0, 0, 3, 6], [1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0], 
+    [0, 1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0, 9]]
+    for i in range(4):
+        print(moveZERO(A[i]))
+        print(moveZEROinOne(A)[i])
