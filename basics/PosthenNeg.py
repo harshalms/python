@@ -14,7 +14,7 @@ Output : 7  9  10  11  -5  -3  -4  -1
 # Time Complexity : O(n)
 # Auxiliary space : O(1)
 def PosNegArrange(A):
-    for i in range(len(A)):
+    for i in range(1, len(A)):
         j = i
         while j>0:
             if A[j]>=0 and A[j-1]<0:
