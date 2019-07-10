@@ -26,3 +26,16 @@ Input : x = 5, arr[] = {2, 6, 8, 3}
 Output :  arr[] = {6, 3, 2, 8}
 '''
 def difference_sorting(A, x):
+    tempArr = [0]*len(A)
+    for i in range(len(A)):
+        tempArr[i] = [abs(x-A[i]), A[i]]
+    tempArr.sort()
+    for i in range(len(A)):
+        A[i] = tempArr[i][1]
+    return A
+if __name__ == "__main__":
+    A = [[10, 5, 3, 9, 2], [1, 2, 3, 4, 5], [2, 6, 8, 3]]
+    x = [7, 6, 5]
+    for i in range(len(x)):
+        print(difference_sorting(A[i], x[i]))
+
