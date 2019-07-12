@@ -6,10 +6,6 @@ is {1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0}, it should be changed
 to {1, 9, 8, 4, 2, 7, 6, 0, 0, 0, 0}. The order of all other elements should be same. 
 Expected time complexity is O(n) and extra space is O(1).
 '''
-# A = [1, 2, 0, 4, 3, 0, 5, 0]
-# A = [1, 2, 0, 0, 0, 3, 6]
-# A = [1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0]
-# A = [0, 1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0, 9]
 def moveZERO(A):
     k = 0
     for i in range(len(A)):
