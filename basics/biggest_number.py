@@ -10,7 +10,7 @@ def bigNumber(A):
     print(A)
     big = A[0]
     for i in range(1, len(A)):
-        if int(big + A[i]) < int(A[i] + big):
+        if big + A[i] < A[i] + big:
             big = A[i]+big
         else:
             big = big+A[i]
