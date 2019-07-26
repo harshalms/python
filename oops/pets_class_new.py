@@ -3,6 +3,7 @@ class Pets:
     dogs = []
     def __init__(self, dogs):
         self.dogs = dogs
+    
 # parent class
 class Dog:
     # class attribute
@@ -14,6 +15,8 @@ class Dog:
 
     def eat(self):
         self.is_hungery = False
+    def walk(self):
+        return "{} is walking!".format(dog.name)
 
 # creating instance
 my_dogs = [Dog("Tom", 6), Dog("Fletcher", 7), Dog("Larry", 9)]
@@ -23,6 +26,7 @@ print("I have {} dogs.".format(len(my_dogs)))
 for dog in my_dogs:
     dog.eat()
     print('{} is {}.'.format(dog.name, dog.age))
+    print(dog.walk())
 print("And they are all {}, off course.".format(dog.species))
 
 are_my_dogs_hungery = False
