@@ -5,15 +5,15 @@ If such an integer is found return 1 else return -1."""
 def solve(A):
     A.sort()
     nobel = {}
-    for i in A:
-        if i not in nobel:
-            nobel[i] = 0
-        for j in nobel:
-            if i > j:
-                nobel[j] += 1
-    for i in nobel:
-        if i == nobel[i]:
-            return 1
+    A.sort()
+    for i in range(len(A)):
+        if A[i] == len(A)-i-1:
+            if i == len(A)-1:
+                return 1
+            elif A[i] < A[i+1]:
+                return 1
+            else:
+                return -1
     return -1
 
 # A = [7, 3, 16, 10, 7, 7, 10, 3, -1, 0]
