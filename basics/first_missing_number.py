@@ -19,9 +19,6 @@ class Solution:
                 return i
         return i+1
 a = Solution()
-b = Solution()
-c = Solution()
-print(a.firstMissingPositive([1,2,0]))
-print(b.firstMissingPositive([3,4,-1,1]))
-print(c.firstMissingPositive([-8, -7, -6]))
-
+Arr = [[1,2,0], [3,4,-1,1], [-8, -7, -6]]
+for A in Arr:
+    print(A, "\noutput:", a.firstMissingPositive(A), "\n")
