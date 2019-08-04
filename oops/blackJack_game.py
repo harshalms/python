@@ -60,6 +60,7 @@ class Player:
 card = Card("Jack", 6)
 # card.show()
 
+
 deck = Deck()
 # deck.show()
 deck.shuffle()
