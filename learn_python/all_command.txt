@@ -1,0 +1,22 @@
+pwd=prsent working directory
+ls=list
+clear=clear the screen
+cd=change directory
+eg: cd C:// changes to c directory
+and in this dircorty now i can change to another directory like cd learn_python
+create a folder/directory: mkdir learn_python (this is without space name of a directory)
+(with space then use double quote o/w all the folders will be created with names separated buy space)
+creating a file: touch doc.txt
+touch doc.py 
+touch hello.java
+how to go to back to directory just outside the current directory. cd ..
+cd .. will take to just outside of current directory
+you can usetab for auto completion of name of files and folders
+how to delet files:
+rm doc.txt (rm means remove)
+completly remove a folder (rm -rf learn_python will remove learn_python) rf means a recursive force
+to create a file use touch command: e.g. touch hello.py thus file will be created
+use code hello.py to open the file and to write your code
+to open terminal press ctrl + ~
+to run your file: python hello.py (for windows users)
+and use: python3 hello.py (linux users)
