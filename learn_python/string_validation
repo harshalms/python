@@ -1,0 +1,3 @@
+print('ab123'.isalnum()) # checks if the enternd string is alpha numeric string
+print('abc'.isalpha()) # checks if the entered string is alphatical character string
+print('123'.isdigit()) # checks if the entered string is number string
