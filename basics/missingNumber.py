@@ -21,7 +21,29 @@ def FindMissing(A):
         if A[i+1]-A[i]>1:
             return A[i]+1
     return A[len(A)-1]+1
+# Using Binary Search
+# def FindMissingBinary(A):
+#     for i in range(len(A)+1):
+#         start, end = 0, len(A)-1
+#         while start <= end:
+#             mid = (start + end)//2
+#             if i == A[mid]:
+#                 return i
+#                 # count = 0
+#             else:
+#                 if i < A[mid]:
+#                     end = mid-1
+#                 else:
+#                     start = mid+1
+#         return ("No",i)
+#     # return i
+                
+# A = [0, 1, 2, 6, 9]
+# print(FindMissingBinary(A))
+
 if __name__ == "__main__":
     arr = [[0, 1, 2, 6, 9], [0, 1, 2, 3], [0, 1, 2, 3, 4, 5, 6, 7, 10]]
     for i in range(len(arr)):
-        print(arr[i],"---->",FindMissing(arr[i]))
+        print(arr[i],"---->", FindMissing(arr[i]))
+        # print(arr[i],"---->", FindMissingBinary(arr[i]))
+        # print()
