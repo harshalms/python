@@ -3,15 +3,10 @@
 """
 For Ex.
     A -> 1
-    
     B -> 2
-    
     C -> 3
-    
     ...
-    
     Z -> 26
-    
     AA -> 27
 """
 class Solution:
@@ -24,7 +19,7 @@ class Solution:
         return sum
 
 if __name__ == "__main__":
-    A = ["AAA", "AB", "ACC", "BB"]
+    A = ["AAA", "AB", "ACC", "BB", "AZPKR", "ZPKR", "YZ"]
     obj = Solution()
     for input in A:
         print("Input: %s, Output: %s"% (input, obj.titleToNumber(input)))
