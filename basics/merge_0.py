@@ -1,9 +1,9 @@
-A=[1,3,5]
-B=[2,4]
-#not required
-C=[]
-# no need to pass as C empty Array, you can define inside function
-def merge(A,B,C):
+# A=[1,3,5]
+# B=[2,4]
+# #not required
+# C=[]
+# # no need to pass as C empty Array, you can define inside function
+def merge(A,B):
     C = []
     i, j = 0, 0
     M, N = len(A), len(B)
@@ -36,4 +36,18 @@ def merge(A,B,C):
     #        C.append(A[i])
     return C
 
-print(merge(A,B,C))
+    def divide(A, start, end):
+        k, l = [], []
+        mid = (start+end)//2
+        if end-start>1:
+            k=divide(A, start, mid+1)
+            l=divide(A, mid, end)
+        if end-start<=1:
+            merge(k, l)
+        return merge(k, l)
+if __name__ == "__main__":
+    A = [43, 32, 22, 78, 63, 57, 91, 13]
+    start = 0, end = len(A)
+    print(divide(A,start,end))
+
+
