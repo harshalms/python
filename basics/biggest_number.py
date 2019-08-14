@@ -16,5 +16,7 @@ def bigNumber(A):
             big = big+A[i]
     return big
 if __name__ == "__main__":
-    A = [1, 34, 3, 98, 9, 76, 45, 4]
+    # A = [1, 34, 3, 98, 9, 76, 45, 4]
+    A = [54, 546, 548, 60]
+    # A = [ 3, 30, 34, 5, 9 ]
     print(bigNumber(A))
