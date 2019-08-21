@@ -2,9 +2,9 @@ import numpy as np
 
 def gradientDescent(x,y):
     m = len(x)
-    learning_rate = 0.01
+    learning_rate = 0.04
     t0_curr = t1_curr = 0
-    iterations = 10000
+    iterations = 1500
     # cost = 5000
     
     for i in range(iterations):
